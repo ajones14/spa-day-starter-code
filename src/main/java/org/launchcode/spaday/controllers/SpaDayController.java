@@ -69,6 +69,8 @@ public class SpaDayController {
     @PostMapping(value="")
     public String spaMenu(@RequestParam String name, @RequestParam String skintype, @RequestParam String manipedi, Model model) {
 
+        model.addAttribute(name, "name");
+
         ArrayList<String> facials = new ArrayList<String>();
         facials.add("Microdermabrasion");
         facials.add("Hydrofacial");
