@@ -6,5 +6,13 @@
 </head>
 <body>
 
+<form method="post" th:action="@{/user}">
+    <label>Username: <br><input type="text" name="username" /></label><br><br>
+    <label>Email: <br><input type="email" name="email"/></label><br><br>
+    <label>Password: <br><input type="password" name="password"/></label><br><br>
+    <label>Enter password again: <br><input type="password" name="verify"/></label><br><br>
+    <input type="submit" value="Login"/>
+</form>
+
 </body>
 </html>
